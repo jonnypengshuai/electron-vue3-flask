@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-2">Current App Path: {{ appPath }}</div>
   <div>
-    <TheCalculator></TheCalculator>
+    <Calculator></Calculator>
   </div>
 </template>
 
@@ -12,11 +12,11 @@ import axiosRetry from "axios-retry";
 
 const MIN_API_VERSION = "1.1.0";
 
-import TheCalculator from "./components/TheCalculator.vue";
+import Calculator from "./components/Calculator.vue";
 
 export default {
   name: "App",
-  components: { TheCalculator },
+  components: { Calculator },
   data() {
     return {
       appPath: "",

@@ -9,7 +9,7 @@ flask-restx==0.5.1
 itsdangerous==2.0.1
 Jinja2==3.1.3
 jsonschema==3.2.0
-MarkupSafe==2.0.1
+MarkupSafe
 pyinstaller==4.5.1
 pyinstaller-hooks-contrib==2021.3
 pyrsistent==0.18.0
