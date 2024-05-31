@@ -25,11 +25,13 @@
     "core-js": "^3.6.5",
     "electron-log": "^4.4.1",
     "electron-updater": "^4.6.5",
+    "element-plus": "^2.7.3",
     "ps-tree": "^1.2.0",
     "semver": "^7.3.5",
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.24.6",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
@@ -46,6 +48,8 @@
     "postcss": "^8",
     "prettier": "^2.3.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.0",
     "vue-cli-plugin-electron-builder": "~2.1.1"
   },
   "eslintConfig": {

@@ -1,11 +1,8 @@
 <template>
     <div class="flex flex-col justify-center items-center p-3 text-xl font-mono">
-      <p class="p-2">Input something like <code>1 + 1</code>.</p>
-      <p>
-        This calculator supports <code>+-*/^()</code>, whitespaces, and integers
-        and floating numbers.
-      </p>
-  
+    <div class="mb-4">
+   
+    </div>
       <div class="m-2">
         <input
           class="rounded-lg p-2"
@@ -14,8 +11,9 @@
           placeholder="1 + 2"
         />
       </div>
-      <button
-        @click="calcSum"
+      <el-button type="primary"  @click="calcSum" >54646456</el-button>
+      <!-- <button
+       
         class="
           my-2
           p-2
@@ -25,17 +23,20 @@
           transition-all
         "
       >
-        Calculate
-      </button>
+        Test
+      </button> -->
   
       <br />
       <span class="label"> {{ result }}</span>
     </div>
+    
+    <el-button type="success" plain>Success</el-button>
   </template>
   
   <script setup>
   import { ref, onMounted ,getCurrentInstance} from 'vue';
   import axios from "axios";
+  // import { ElButton} from 'element-plus'
   
 //   const requestObject = ref({
 //   key: "Hello world from Electron!",

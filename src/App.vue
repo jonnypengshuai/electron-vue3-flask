@@ -3,6 +3,9 @@
   <div>
     <Calculator></Calculator>
   </div>
+  <div>
+    <Calculator></Calculator>
+  </div>
 </template>
 
 <script>

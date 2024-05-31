@@ -1,4 +1,31 @@
+const AutoImport = require('unplugin-auto-import/webpack').default;
+const Components = require('unplugin-vue-components/webpack').default;
+const { ElementPlusResolver } = require('unplugin-vue-components/resolvers');
+
+// import AutoImport from 'unplugin-auto-import/webpack';
+// import Components from 'unplugin-vue-components/webpack';
+// import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+
 module.exports = {
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.mjs$/,
+          include: /node_modules/,
+          type: 'javascript/auto',
+        },
+      ],
+    },
+    plugins: [
+      AutoImport({
+        resolvers: [ElementPlusResolver()],
+      }),
+      Components({
+        resolvers: [ElementPlusResolver()],
+      }),
+    ],
+  },
   pluginOptions: {
     electronBuilder: {
       externals: ["electron-log"],
